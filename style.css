@@ -1,3 +1,102 @@
-.menu-icon {
-	height: 40px;
+body {
+  background-color: #f1faee;
 }
+
+.background--red {
+  background-color: #ffadad;
+}
+
+.background--orange {
+  background-color: #ffd6a5;
+}
+
+.background--yellow {
+  background-color: #fdffb6;
+}
+
+.background--green {
+  background-color: #caffbf;
+}
+
+.background--blue {
+  background-color: #9bf6ff;
+}
+
+.background--purple {
+  background-color: #bdb2ff;
+}
+
+.background--rest {
+  background-color: #f1faee;
+}
+
+.nav-toggle__button {
+  height: 60px;
+  width: 60px;
+  background-image: url("hamburger_icon.png");
+  background-repeat: no-repeat;
+  background-size: 40%;
+  background-position: center;
+  cursor: pointer;
+}
+
+.nav-toggle__button:hover {
+  opacity: 0.8;
+}
+
+.nav-toggle__list {
+  position: fixed;
+  left: 0;
+  top: 0;
+  padding: 0;
+  background-color: #fff;
+  overflow: hidden;
+  margin: 50px 0 0 25px;
+  border: 2px solid rgba(124, 124, 124, 0.5);
+}
+
+.nav-toggle__list.hidden {
+  visibility: hidden;
+}
+
+.nav-toggle__list__color {
+  list-style: none;
+}
+
+.nav-toggle__list__color--red {
+  background-color: #ffadad;
+}
+
+.nav-toggle__list__color--orange {
+  background-color: #ffd6a5;
+}
+
+.nav-toggle__list__color--yellow {
+  background-color: #fdffb6;
+}
+
+.nav-toggle__list__color--green {
+  background-color: #caffbf;
+}
+
+.nav-toggle__list__color--blue {
+  background-color: #9bf6ff;
+}
+
+.nav-toggle__list__color--purple {
+  background-color: #bdb2ff;
+}
+
+.nav-toggle__list__color--reset {
+  background-color: #f1faee;
+}
+
+.nav-toggle__list__color span {
+  display: block;
+  padding: 20px;
+  color: #111;
+  font-family: arial;
+  font-size: 16px;
+  white-space: nowrap;
+}
+/*# sourceMappingURL=style.css.map */

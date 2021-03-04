@@ -1,0 +1,103 @@
+// Colors 
+$red-clr: #ffadad;
+$orange-clr: #ffd6a5;
+$yellow-clr: #fdffb6;
+$green-clr: #caffbf;
+$blue-clr: #9bf6ff;
+$purple-clr: #bdb2ff;
+$background-clr: #f1faee;
+$white-clr: #fff;
+$black-clr: #111;
+
+
+body {
+	background-color: $background-clr;
+}
+
+.background{
+	&--red {
+		background-color: $red-clr;
+	}
+	&--orange {
+		background-color: $orange-clr;
+	}
+	&--yellow {
+		background-color: $yellow-clr;
+	}
+	&--green {
+		background-color: $green-clr;
+	}
+	&--blue {
+		background-color: $blue-clr;
+	}
+	&--purple {
+		background-color: $purple-clr;
+	}
+	&--rest {
+		background-color: $background-clr;
+	}
+}
+
+
+.nav-toggle {
+	&__button {
+		height: 60px;
+		width: 60px;
+		background-image: url("hamburger_icon.png");
+		background-repeat: no-repeat;
+		background-size: 40%;
+		background-position: center;
+		cursor: pointer;
+
+		&:hover {
+			opacity: 0.8;
+		}
+	}
+	&__list {
+		position: fixed;
+		left: 0;
+		top: 0;
+		padding: 0;
+		background-color: $white-clr;
+		overflow: hidden;
+		margin: 50px 0 0 25px;
+		border: 2px solid rgba(124, 124, 124, 0.5);
+		&.hidden {
+			visibility: hidden;
+		}
+		&__color {
+			list-style: none;
+			&--red {
+				background-color: $red-clr;
+			}
+			&--orange {
+				background-color: $orange-clr;
+			}
+			&--yellow {
+				background-color: $yellow-clr;
+			}
+			&--green {
+				background-color: $green-clr;
+			}
+			&--blue {
+				background-color: $blue-clr;
+			}
+			&--purple {
+				background-color: $purple-clr;
+			}
+			&--reset {
+				background-color: $background-clr;
+			}
+			& span {
+				display: block;
+				padding: 20px;
+				color: $black-clr;
+				font-family: arial;
+				font-size: 16px;
+				white-space: nowrap;
+			}
+		}
+	}
+}
+
+
