@@ -12,6 +12,7 @@ $black-clr: #111;
 
 body {
 	background-color: $background-clr;
+	transition: background-color 0.5s ease-in;
 }
 
 .background{
@@ -41,18 +42,15 @@ body {
 
 .nav-toggle {
 	&__button {
-		height: 60px;
-		width: 60px;
+		height: 30px;
+		width: 30px;
+		margin: 15px;
 		background-image: url("hamburger_icon.png");
 		background-repeat: no-repeat;
-		background-size: 40%;
+		background-size: 100%;
 		background-position: center;
 		cursor: pointer;
-
-		&:hover {
-			opacity: 0.8;
 		}
-	}
 	&__list {
 		position: fixed;
 		left: 0;
@@ -60,10 +58,12 @@ body {
 		padding: 0;
 		background-color: $white-clr;
 		overflow: hidden;
-		margin: 50px 0 0 25px;
-		border: 2px solid rgba(124, 124, 124, 0.5);
+		margin: 50px 0 0 22px;
+		box-shadow: 8px 8px 6px #888888;
+		transition: transform 0.8s ease-out;
 		&.hidden {
 			visibility: hidden;
+			transform: translateY(-500px);
 		}
 		&__color {
 			list-style: none;
@@ -88,6 +88,9 @@ body {
 			&--reset {
 				background-color: $background-clr;
 			}
+			&.active {
+				border: 2px ridge #888888;
+			}
 			& span {
 				display: block;
 				padding: 20px;
@@ -100,4 +103,8 @@ body {
 	}
 }
 
-
+.color__text {
+	margin-top: 50px;
+	text-align: center;
+	font-size: 50px;
+}

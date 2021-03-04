@@ -1,5 +1,7 @@
 body {
   background-color: #f1faee;
+  -webkit-transition: background-color 0.5s ease-in;
+  transition: background-color 0.5s ease-in;
 }
 
 .background--red {
@@ -31,17 +33,14 @@ body {
 }
 
 .nav-toggle__button {
-  height: 60px;
-  width: 60px;
+  height: 30px;
+  width: 30px;
+  margin: 15px;
   background-image: url("hamburger_icon.png");
   background-repeat: no-repeat;
-  background-size: 40%;
+  background-size: 100%;
   background-position: center;
   cursor: pointer;
-}
-
-.nav-toggle__button:hover {
-  opacity: 0.8;
 }
 
 .nav-toggle__list {
@@ -51,12 +50,19 @@ body {
   padding: 0;
   background-color: #fff;
   overflow: hidden;
-  margin: 50px 0 0 25px;
-  border: 2px solid rgba(124, 124, 124, 0.5);
+  margin: 50px 0 0 22px;
+  -webkit-box-shadow: 8px 8px 6px #888888;
+          box-shadow: 8px 8px 6px #888888;
+  -webkit-transition: -webkit-transform 0.8s ease-out;
+  transition: -webkit-transform 0.8s ease-out;
+  transition: transform 0.8s ease-out;
+  transition: transform 0.8s ease-out, -webkit-transform 0.8s ease-out;
 }
 
 .nav-toggle__list.hidden {
   visibility: hidden;
+  -webkit-transform: translateY(-500px);
+          transform: translateY(-500px);
 }
 
 .nav-toggle__list__color {
@@ -91,6 +97,10 @@ body {
   background-color: #f1faee;
 }
 
+.nav-toggle__list__color.active {
+  border: 2px ridge #888888;
+}
+
 .nav-toggle__list__color span {
   display: block;
   padding: 20px;
@@ -98,5 +108,11 @@ body {
   font-family: arial;
   font-size: 16px;
   white-space: nowrap;
+}
+
+.color__text {
+  margin-top: 50px;
+  text-align: center;
+  font-size: 50px;
 }
 /*# sourceMappingURL=style.css.map */
